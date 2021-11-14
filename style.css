@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #070514;
+    color: whitesmoke;
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+section{
+    padding: 32px;
+}
+
+h1{
+font-weight: bolder;
+font-size: 56px;
+}
+
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 48px;
+        line-height: 57px;
+    }
+    
+}
+
+h2{
+font-weight: bold;
+font-size: 40px;
+}
+
+h3{
+font-weight: 600;
+font-size: 32px;
+}
+
+p{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.anchors{
+    visibility: hidden;
+    position: relative;
+    top: -100px;
+}
+
+.input-label{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.input-field,
+.input-textarea{
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: blue;
+    padding: 12px, 18px;
+    width: 100%;
+    border:none;
+    border-radius: 30px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.input-label span{
+     font-size: 18px;
+     font-weight: 400;
+}
+
+.tag{
+    background-color: purple;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 36px;
+    text-decoration: none;
+
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    max-width: 1140px;
+}
+
+.cta{
+    background-color: rgb(110, 165, 1);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin-top: 24px;
+}
+
+.hero{
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(7,5,20,1) 0%, rgba(15,25,93,1) 31%);
+}
+
+.hero-content{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header */
+
+.header{
+    position: sticky;
+    top: 0;
+   /*left: 0;*/
+    width: 100%;
+    z-index: 5;
+}
+
+.header-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*senza mettere mediaquery, con la proprietà wrap, permetto
+al menu di andare a capo quando non ci entra nella viewport*/
+
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li{
+    margin-right: 24px;
+}
+
+.work-menu ul{
+    list-style-type: none;
+    display:flex;
+}
+
+.work-menu ul li{
+    margin-right: 24px;
+}
+
+.work{}
+
+.work-menu{
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .work-menu{
+        display: none;
+    }
+    
+}
+
+.works-item{
+    margin-bottom: 24px;
+}
+
+.works-item-tag{
+color: lightgreen;
+}
+
+.work-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*anche qui wrappando mi evito di fare mediaquery e raggiungo il risultato
+di mandare a capo da mobile le mie label e contenuto*/
+
+.work-info-label{
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.work-info-content{
+    width:70%;
+    flex-grow: 1;
+    flex-shrink: 1;   
+}
+
+.images{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.images img{
+    margin-bottom: 36px;
+    max-width: 100%;
+}
+
+/* la max-width100% invece della mediaquery, permette alla
+mia immagine di occupare AL MASSIMO tutta la larghezza orizzontale
+della viewport */
+
+.image-right{
+    align-self: flex-end;
+}
+
+.image-left{
+    align-self: flex-start;
+}
+
+.contacts{}
+
+.contacts-content{
+    display:flex;
+    justify-content: space-between;
+}
+/*aggiungendo space-between dico di fare in modo che
+il contenuto abbia uno spazio al centro sempre*/
+
+.contacts-about,
+.contacts-form{
+    width: 40%; 
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*con grow 0 e il shrink 1, dico che le colonne
+possono rimpicciolirsi ma non ingrandirsi a seconda 
+del contenuto e/p del dispositivo*/
+
+@media screen and (max-width:768px) {
+    .contacts-content{
+        flex-direction: column;
+    }
+    .contacts-about,
+    .contacts-form{
+        width: 100%;
+    }
+}
+
+.footer{
+    background-image: linear-gradient(0deg, rgba(7,5,20,1) 0%, rgba(15,25,93,1) 31%);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.copyright{
+    color: whitesmoke;
+}
+
+.back-to-top{
+    background-image: url();
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    background-repeat: no-repeat;
+    background-position:center, center;
+    background-color: purple;
+    cursor: pointer; /*comando per far vedere la manina all'hover*/
+    display: none;
+}

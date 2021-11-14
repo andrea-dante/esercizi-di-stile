@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'UX/UI Designer che cercavi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header clas="header">
+        <div class="container header-container"></div>
+            <div class="logo">Andrea Dante Privitera</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Chi sono</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Ciao, <br> Andrea</h1>
+            <h2>come stai, tutto apposto?</h2>
+            <h3>io sono uno UX Designer, ti va di lavorare con me?</h3>
+            <button class="cta">Cosa puoi fare per me?</button>
+        </div>
+    </section>
+
+    <section class="work-menu">
+        <div class="container">
+            <nav class="">
+                <ul>
+                    <li><a class="tag" href="#ux-ui">UX/UI Design</a></li>
+                    <li><a class="tag" href="#">Siti Web</a></li>
+                    <li><a class="tag" href="#">App mobile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="works">
+        <a class="anchors" id="works"></a>
+        <div class="container">
+
+            <div id="ux-ui" class="works-item">
+                <div class="works-item-tag">UX/UI Design/Hospitality/2021</div>
+                <h2>Hotel Villa Michelangelo</h2>
+            </div>
+
+            <div class="work-info">
+                <div class="work-info-label">About</div>
+                <div class="work-info-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, laboriosam.</p>
+                </div>
+            </div> 
+               
+            <div class="work-info">
+                <div class="work-info-label">Output</div>
+                <div class="work-info-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit non nobis. Nemo laborum cupiditate, nam corporis dolorem temporibus sapiente expedita, aliquam perferendis vitae laudantium, quam facilis mollitia molestiae ipsa.</p>
+                </div>
+            </div>
+
+            <div class="images">
+                <img class="image-right" src="images/foto-casual-mirko.jpg" alt="immagine 1">
+                <img src="images/foto-mirko.jpg" alt="immagine 2">
+                <img class="image-left" src="images/foto-casual-mirko.jpg" alt="immagine 3">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container contacts-content">
+            <div class="contacts-about">
+                <h2 id="test js">About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet consectetur eum dolorum quis corporis consequuntur suscipit temporibus obcaecati blanditiis!</p>
+            </div>
+            <div class="contacts-form">
+                <form name="contact-form" netlify>
+                    <label class="input-label" for="">Nome e Cognome</label>
+                    <input id="input test" class="input-field" type="text" name="nomecognome" placeholder="Nome Cognome" value="Cazzo" required>
+                    
+                    <label class="input-label" for="">E-mail</label>
+                    <input class="input-field" type="email" name="email" placeholder="esempio@mail.com" required>
+
+                    <label class="input-label" for="">Oggetto del messaggio</label>
+                    <input class="input-field" type="text" name="oggetto" placeholder="" required>
+                    
+                    <label class="input-label" for="">Parlami del tuo progetto <span>opzionale</span></label>
+                    <textarea class="input-textarea" name="messaggio" id="" cols="30" rows="10" maxlength="600"></textarea>
+
+                    <button id="test cta" class="cta">Chiedi una consulenza</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">copyright tua mamma</div>
+        </div>
+    </footer>
+
+    <div id="btp-button" class="back-to-top"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
